@@ -5,23 +5,31 @@
  */
 #include <string>
 #include <vector>
-
+#include <algorithm>
+#include <iostream>
 using namespace std;
-vector<int> arr(vector<int> arr , vector<vector<int>> Com) {
-    vector<int> temp;
-    int start,end;
-    for(int i= 0  ;i<=Com.size();i++){
-        start = Com[i][0];
-        end = Com[i][2];
-        for(int j = start;j<end;j++){
-            temp.push_back(arr[j]);
-        }
-    }
-    return temp;
-}
+
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <iostream>
+using namespace std;
+
 vector<int> solution(vector<int> array, vector<vector<int>> commands) {
     vector<int> answer;
-    answer = arr(array,commands);
-
+    vector<int> temp;
+    int start =0,end=0,k=0;
+    for(int i= 0  ;i<commands.size();i++){
+        start = commands[i][0]-1;
+        end = commands[i][1];
+        k = commands[i][2]-1;
+        temp.clear();
+        for(int j = start;j<end;j++){
+            temp.push_back(array[j]);
+        }
+        sort(temp.begin(),temp.end());//임시 저장 후 정렬
+        answer.push_back(temp.at(k));
+        
+    }      
     return answer;
 }
