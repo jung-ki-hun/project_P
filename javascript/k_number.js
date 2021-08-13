@@ -4,12 +4,13 @@
  * https://programmers.co.kr/learn/courses/30/lessons/42748?language=javascript
  */
 
- var array_cut =(arr,i,j,k)=>{
-    let arr_c = arr.slice(i,j);
+ var array_cut =(arr,com)=>{
+    
     arr_c.sort()
     return arr_c[k];
 }
 function solution(array, commands) {
-    var answer = ar;
+    array_cut(array, commands)
+    var answer = [];
     return answer;
 }
