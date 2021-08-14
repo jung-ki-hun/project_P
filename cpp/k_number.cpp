@@ -9,12 +9,6 @@
 #include <iostream>
 using namespace std;
 
-#include <string>
-#include <vector>
-#include <algorithm>
-#include <iostream>
-using namespace std;
-
 vector<int> solution(vector<int> array, vector<vector<int>> commands) {
     vector<int> answer;
     vector<int> temp;
