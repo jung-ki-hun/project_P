@@ -8,6 +8,6 @@ using namespace std;
 int solution(string s) {
     int answer = 0;
     string eng_nun = {"zero","one","two","three","four","five","six","seven","eight","nine"};
-    for(int =0;i<10)
+    //for(int =0;i<10)
     return answer;
 }

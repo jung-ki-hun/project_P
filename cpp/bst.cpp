@@ -9,6 +9,10 @@ struct node{
     node* right;
 }; 
 
+node add(){
+    
+}
+
 void main(){
 
 }
